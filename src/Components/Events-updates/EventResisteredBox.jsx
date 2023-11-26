@@ -1,5 +1,5 @@
 import React from 'react'
-import SmallEventBox from '../Event-box/smallEventBox'
+import SmallEventBox from "../Event-box/SmallEventBox"
 
 const EventResisteredBox = (props) => {
   return (
@@ -8,7 +8,7 @@ const EventResisteredBox = (props) => {
                     <h1 className="text-2xl font-bold my-3 text-white underline underline-offset-8">
                       {props.EventHeading}
                     </h1>
-                    
+                  
                     <SmallEventBox
                       EventName={props.EventName}
                       EventTime={props.EventTime}

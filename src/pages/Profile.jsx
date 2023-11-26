@@ -1,6 +1,8 @@
 import React from "react";
 import Sidebar from "../Components/Profile-Sidebar/Sidebar";
+
 import ProfileNav from "../Components/Profile-Navbar/ProfileNav";
+
 import EventResisteredBox from "../Components/Events-updates/EventResisteredBox";
 
 function Profile() {
@@ -46,4 +48,7 @@ function Profile() {
 }
 
 export default Profile;
+
+
+
 
