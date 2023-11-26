@@ -4,7 +4,7 @@ import Sidebar from "../Components/Profile-Sidebar/Sidebar";
 // import Card from "../Components/Carousell/Card";
 import ProfileNav from "../Components/Profile-Navbar/ProfileNav";
 // import EventBox from "../Components/Event-box/EventBox";
-import SmallEventBox from "../Components/Event-box/smallEventBox";
+// import SmallEventBox from "../Components/Event-box/smallEventBox";
 import EventResisteredBox from "../Components/Events-updates/EventResisteredBox";
 
 function Profile() {
