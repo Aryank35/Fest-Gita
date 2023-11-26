@@ -1,10 +1,8 @@
-// import Carousel from "../Components/Carousell/Carousel";
+import React from "react";
 import Sidebar from "../Components/Profile-Sidebar/Sidebar";
-// import { v4 as uuidv4 } from "uuid";
-// import Card from "../Components/Carousell/Card";
+
 import ProfileNav from "../Components/Profile-Navbar/ProfileNav";
-// import EventBox from "../Components/Event-box/EventBox";
-import SmallEventBox from "../Components/Event-box/smallEventBox";
+
 import EventResisteredBox from "../Components/Events-updates/EventResisteredBox";
 
 function Profile() {
@@ -51,44 +49,6 @@ function Profile() {
 
 export default Profile;
 
-{
-
-  // let cards = [
-  //   {
-  //     key: uuidv4(),
-  //     content: <Card imagen="./Demo-pics/College-lighting.jpeg" />,
-  //   },
-  //   {
-  //     key: uuidv4(),
-  //     content: <Card imagen="./Demo-pics/College-fest.jpeg" />,
-  //   },
-  //   {
-  //     key: uuidv4(),
-  //     content: (
-  //       <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2017/12/layer_slider_plugin_thumb.png" />
-  //     ),
-  //   },
-  //   {
-  //     key: uuidv4(),
-  //     content: (
-  //       <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2016/08/slider_revolution-1.png" />
-  //     ),
-  //   },
-  //   {
-  //     key: uuidv4(),
-  //     content: (
-  //       <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2019/01/pwa_880_660.jpg" />
-  //     ),
-  //   },
-  // ];
 
 
-  /* <Carousel
-                  cards={cards}
-                  height="400px"
-                  width="50%"
-                  margin="0 auto"
-                  offset={2}
-                  showArrows={false}
-                /> */
-}
+

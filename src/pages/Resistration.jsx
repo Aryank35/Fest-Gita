@@ -120,7 +120,7 @@ const Resistration = () => {
           <input
             type="submit"
             id="submit"
-            className=" flex mx-auto px-3 bg-slate-600 py-2 rounded-lg hover:cursor-pointer hover:scale-90 text-white"
+            className=" flex w-[200px] mx-auto px-3 justify-center bg-slate-600 py-3 text-lg rounded-lg hover:cursor-pointer hover:scale-90 text-white"
           />
         </form>
       </div>
