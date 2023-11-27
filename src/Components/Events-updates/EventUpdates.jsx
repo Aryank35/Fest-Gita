@@ -17,6 +17,7 @@ const EventUpdates = () => {
                     <EventList/>
                     <EventList/>
                     <EventList/>
+                    
                 </div>
             </div>
         </div>

@@ -1,9 +1,10 @@
 import React from "react";
 import ProfileNav from "../Components/Profile-Navbar/ProfileNav";
 import Sidebar from "../Components/Profile-Sidebar/Sidebar";
-import EventWinners from "../Components/Events/EventWinners";
+
 import EventCard from "../Components/Events/EventCard";
 import { Link } from "react-router-dom";
+import OrganiserSidebar from "../Components/Profile-Sidebar/OrganiserSidebar";
 
 const OrganiserProfile = () => {
   return (
@@ -13,7 +14,7 @@ const OrganiserProfile = () => {
       </div>
       <div className="Organiser-Profile-page w-full h-full flex justify-center">
         <div className="nav  hidden md:flex md:w-[20%]">
-          <Sidebar />
+        <OrganiserSidebar/>
         </div>
         <div className="profile md:w-[80%] flex flex-col py-[60px]">
           <h1 className="text-white font-bold text-center md:text-5xl text-3xl underline underline-offset-8">
