@@ -1,5 +1,5 @@
 import React from 'react'
-import SmallEventBox from '../Event-box/smallEventBox'
+import SmallEventBox from './Event-box/smallEventBox'
 
 const EventResisteredBox = (props) => {
   return (
