@@ -7,7 +7,6 @@ const EventBox = (props) => {
       <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  w-full ">
         
           <img
-            class="rounded-t-lg"
             src={props.url}
             alt="event-img"
             className="w-full mx-auto rounded-xl"

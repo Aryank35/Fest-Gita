@@ -3,9 +3,11 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className="bg-gradient-to-b from-black via-purple-900 to-black h-full">
+    <div className="bg-gradient-to-b from-black via-purple-900 to-black min-h-screen">
         <Navbar/>
-        <h1 className='font-bold text-5xl text-center py-5 text-white'>About Page</h1>
+        <div className="pt-[60px]">
+        <h1 className='font-bold  text-5xl text-center py-5 text-white'>About Page</h1>
+        </div>
     </div>
   )
 }

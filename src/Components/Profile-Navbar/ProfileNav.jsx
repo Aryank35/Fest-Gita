@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { useMemo } from "react";
 
+
 const ProfileNav = () => {
   // State to manage the visibility of the mobile menu
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -46,7 +47,7 @@ const ProfileNav = () => {
       <div className="logo h-[40px] w-[160px] sm:h-[65px] sm:w-[260px] rounded-full bg-gray-600 flex justify-center items-center hover:cursor-pointer">
         <Link to="/" className="h-full w-full">
         <div
-          style={{ backgroundImage: `url(./Demo-pics/cultural.jpg)` }}
+          style={{ backgroundImage: `url(./Demo-pics/cultural.webp)` }}
           className="header flex justify-center items-center bg-cover w-full h-full bg-center rounded-full opacity-80"
         >
           <h1 className="text-xl font-bold sm:text-3xl text-white">Akanksha</h1>
