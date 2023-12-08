@@ -16,11 +16,11 @@ export default function Notification() {
         <div className="hero sm:w-[80%] h-full m-4 flex-col justify-center text-center item-center ">
           <p className="text-3xl font-bold text-white">Notification page....</p>
           <div className=" sm:w-[80%] mx-auto py-5">
-            <Alert/>
-            <Alert/>
-            <Alert/>
-            <Alert/>
-            <Alert/>
+            <Alert />
+            <Alert />
+            <Alert />
+            <Alert />
+            <Alert />
           </div>
         </div>
       </div>

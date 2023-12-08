@@ -7,7 +7,7 @@ import SideNavElements from "../Navbar/SideNavElements";
 
 export default function Sidebar() {
   return (
-    <div className="bg-gray-900 h-screen w-full py-5">
+    <div className="bg-gray-900 min-h-screen w-full py-5">
       <SideNavElements title="Home" icon={<FaHome />} link="/" />
 
       <SideNavElements

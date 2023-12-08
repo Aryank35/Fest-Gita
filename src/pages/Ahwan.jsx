@@ -7,7 +7,7 @@ import EventCard from "../Components/Events/EventCard";
 const Ahwan = () => {
    
   return (
-    <div className="h-full sm:h-screen w-screen bg-gradient-to-b from-black via-purple-900 to-black">
+    <div className=" min-h-screen w-screen bg-gradient-to-b from-black via-purple-900 to-black">
         <Navbar/>
       {/* Tech Fest */}
       <div className=" pt-[60px]  h-full flex flex-col justify-center items-center">

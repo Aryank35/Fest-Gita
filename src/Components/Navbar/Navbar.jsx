@@ -49,6 +49,13 @@ const Navbar = () => {
             </Link>
           </li>
           
+          <li className="hover:underline text-white  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
+          <Link
+          to="/navToPages">
+            pages
+            </Link>
+          </li>
+          
           <li className="flex justify-center text-white items-center">
             <Link
               to="/login"
@@ -126,6 +133,15 @@ const Navbar = () => {
               <button className="px-1 py-2 text-sm text-center hover:scale-[0.85] ">
                 Login/Signup
               </button>
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="hover:text-gray-400 active:underline py-1"
+              to="/navToPages"
+              onClick={toggleMobileMenu}
+            >
+              Others
             </Link>
           </li>
         </ul>

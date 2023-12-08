@@ -21,6 +21,23 @@ import AhwanEventGirls from "./pages/AhwanEventGirls";
 import OrganiserSetting from "./pages/OrganiserSetting";
 import OrganiserNotification from "./pages/OrganiserNotification";
 import OrganiserHelp from "./pages/OrganiserHelp";
+import EventInchargeProfile from "./pages/EventInchargeProfile";
+import EventInchargeSettings from "./pages/EventInchargeSettings";
+import EventInchargeNotifications from "./pages/EventInchargeNotifications";
+import EventInchargeHelp from "./pages/EventInchargeHelp";
+import EventCoordinatorProfile from "./pages/EventCoordinatorProfile";
+import EventCoordinatorSettings from "./pages/EventCoordinatorSettings";
+import EventCoordinatorsNotifications from "./pages/EventCoordinatorsNotifications";
+import EventCoordinatorsHelp from "./pages/EventCoordinatorsHelp";
+import InputEventDetails from "./pages/InputEventDetails";
+import HelpSupportProfile from "./pages/HelpSupportProfile";
+import HelpSupportSettings from "./pages/HelpSupportSettings";
+import HelpSupportNotification from "./pages/HelpSupportNotification";
+import EventParticipants from "./pages/EventParticipants";
+import NavToPages from "./pages/NavToPages";
+import TechFestEvents from "./pages/TechFestEvents";
+import Robotics from "./pages/Robotics";
+
 export default function App() {
   return (
     <BrowserRouter>
@@ -47,7 +64,22 @@ export default function App() {
         <Route path="/akankshaWinners" element={<AkankshaWinnersPage/>} />
         <Route path="/ahwanBoys" element={<AhwanEventBoys/>}/>
         <Route path="/ahwanGirls" element={<AhwanEventGirls/>}/>
-
+        <Route path="/eventInchargeProfile" element={<EventInchargeProfile/>} />
+        <Route path="/eventInchargeSettings" element={<EventInchargeSettings/>} />
+        <Route path="/eventInchargeNotifications" element={<EventInchargeNotifications/>} />
+        <Route path="/eventInchargeHelp" element={<EventInchargeHelp/>} />
+        <Route path="/eventCoordinatorProfile" element={<EventCoordinatorProfile/>} />
+        <Route path="/eventCoordinatorSettings" element={<EventCoordinatorSettings/>} />
+        <Route path="/eventCoordinatorNotifications" element={<EventCoordinatorsNotifications/>} />
+        <Route path="/eventCoordinatorHelp" element={<EventCoordinatorsHelp/>} />
+        <Route path="/inputEventDetails" element={<InputEventDetails/>}/>
+        <Route path="/helpSupportProfile" element={<HelpSupportProfile/>} />
+        <Route path="/helpSupportSettings" element={<HelpSupportSettings/>} />
+        <Route path="/helpSupportNotifications" element={<HelpSupportNotification/>} />
+        <Route path="/eventParticipants" element={<EventParticipants/>}/>
+        <Route path="/navToPages" element={<NavToPages/>}/>
+        <Route path="/techFestEvents" element={<TechFestEvents/>}/>
+        <Route path="/robotics" element={<Robotics/>}/>
       </Routes>
     </BrowserRouter>
   );

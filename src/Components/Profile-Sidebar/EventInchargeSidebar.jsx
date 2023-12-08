@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGear } from '@fortawesome/free-solid-svg-icons'
 import { IoHelp } from "react-icons/io5";
 import { IoMdNotifications } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
@@ -7,34 +9,38 @@ import { RxDashboard } from "react-icons/rx";
 import SideNavElements from "../Navbar/SideNavElements";
 
 
-const OrganiserSidebar = () => {
+const EventInchargeSidebar = () => {
   return (
     <div className="bg-gray-900 min-h-screen w-full py-5">
       <SideNavElements title="Home" icon={<FaHome />} link="/" />
-      
+
       <SideNavElements
-        title="OrgDashboard"
+        title="IncDashboard"
         icon={<RxDashboard />}
-        link="/organiserProfile"
+        link="/eventInchargeProfile"
       />
       <SideNavElements
         title="Profile Settings"
         icon={<CgProfile />}
-        link="/organiserSettings"
-        
+        link="/eventInchargeSettings"
+      />
+      <SideNavElements
+        title="Update Event-Details"
+        icon={<FontAwesomeIcon icon={faGear} />}
+        link="/inputEventDetails"
       />
       <SideNavElements
         title="Notification Center"
         icon={<IoMdNotifications />}
-        link="/organiserNotifications"
+        link="/eventInchargeNotifications"
       />
       <SideNavElements
         title="Help and support"
         icon={<IoHelp />}
-        link="/organiserHelp"
+        link="/eventInchargeHelp"
       />
     </div>
   );
 };
 
-export default OrganiserSidebar;
+export default EventInchargeSidebar;

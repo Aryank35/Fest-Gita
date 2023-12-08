@@ -1,58 +1,68 @@
-// src/components/ImageSlider.js
-import React, { useState, useEffect } from 'react';
-
+import { useState, useEffect } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 
 const ImageSlider = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
-
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
   };
 
-  // Automatic sliding
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      nextSlide();
-    }, 3000); // Change slide every 5 seconds (adjust as needed)
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+  };
 
-    return () => clearInterval(intervalId); // Cleanup on component unmount
-  }, [currentIndex]);
+  // Auto slide change every 5 seconds (adjust as needed)
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 2500); // Change slide every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [currentIndex, images.length]);
 
   return (
-    <div className="relative shadow-sm shadow-black border w-[93%] sm:w-[95%] h-[200px] sm:h-[300px] md:h-[450px] overflow-hidden rounded-xl mx-auto">
-  {images.map((image, index) => (
-    <div
-      key={index}
-      className={` w-full h-full transition-transform duration-500 ${
-        index === currentIndex ? "opacity-100 z-10" : "opacity-0 -z-1"
-      }`}
-      style={{ transform: `translatey(-${currentIndex * 100}%)` }}
-    >
-      <img
-        className="w-[100%] h-[100%] object-fill object-center rounded-xl "
-        src={image.url}
-        alt={`Slide ${index + 1}`}
-      />
+    <div className="relative w-full max-w-[95%] mx-auto">
+      <div className="overflow-hidden relative w-full h-[200px] sm:h-[300px] md:h-[450px] shadow-md shadow-blue-600">
+        <div
+          className="flex transition-transform duration-500 ease-in-out"
+          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        >
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className="w-full h-full flex-shrink-0"
+            >
+              <img
+                className="w-full h-full object-fill object-center rounded-xl"
+                src={image.url}
+                alt={`Slide ${index + 1}`}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+      <button
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 scale-90 text-white h-8"
+        onClick={prevSlide}
+      >
+        <FontAwesomeIcon icon={faChevronLeft} className="text-white text-4xl md:font-bold font-semibold" />
+      </button>
+      <button
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 scale-90 text-white h-8"
+        onClick={nextSlide}
+      >
+        <FontAwesomeIcon icon={faChevronRight} className="text-white text-4xl md:font-bold font-semibold"/>
+        
+      </button>
     </div>
-  ))}
-  <button
-    className="absolute left-4 top-1/2 transform -translate-y-1/2 scale-90 text-white h-8"
-    onClick={prevSlide}
-  >
-    <img src="./slider-arrow/left-arrow.png" alt="left-arrow" className="px-3 w-full h-6 py-2 bg-white rounded-full " />
-  </button>
-  <button
-    className="absolute right-4 top-1/2 transform -translate-y-1/2 scale-90 text-white h-8"
-    onClick={nextSlide}
-  >
-    <img src="./slider-arrow/right-arrow.png" alt="right-arrow" className="px-3 w-full h-6 py-2 bg-white rounded-full " />
-  </button>
-</div>
-
   );
 };
 

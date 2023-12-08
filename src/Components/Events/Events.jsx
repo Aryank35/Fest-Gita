@@ -24,7 +24,7 @@ const Events = () => {
         </Link>
 
         <Link to="/akanksha" className=" w-[95%] sm:w-[30%]">
-          <EventCard name="Akanksha" url={"./Demo-pics/cultural.jpg"} />
+          <EventCard name="Akanksha" url={"./Demo-pics/cultural.webp"} />
         </Link>
       </div>
     </div>
