@@ -45,6 +45,14 @@ const EventInchargeProfile = () => {
               <EventCard name="Event Details" url={"./Demo-pics/tech.jpg"} />
             </Link>
           </div>
+
+          <Link to="/eventParticipants" className="w-full flex justify-center">
+              <div className="events w-full h-[80px] md:w-[50%] sm:h-[100px] bg-[#2E294E] px-3 rounded-xl opacity-80 hover:scale-90 hover:opacity-30  font-bold text-4xl  hover:text-6xl  flex justify-center items-center shadow-lg shadow-blue-400 ">
+                <p className="text-center opacity-100 text-white ">
+                  Participants
+                </p>
+              </div>
+              </Link>
           
           <div className="winner md:px-6 mx-auto px-2 w-full">
             <h1 className="text-white font-bold text-center text-3xl my-9">
