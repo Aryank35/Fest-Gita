@@ -16,6 +16,7 @@ const EventCoordinatorSettings = () => {
             <div className="hero md:w-[80%] w-full h-full md:m-4 flex-col justify-center text-center item-center ">
               <p className="text-3xl font-bold text-white">Profile Settings</p>
               <ProfileSetting/>
+              
             </div>
           </div>
         </div>

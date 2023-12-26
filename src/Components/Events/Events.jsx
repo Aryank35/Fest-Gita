@@ -6,11 +6,11 @@ const Events = () => {
   return (
     <div className=" pt-[50px] flex flex-col justify-center items-center">
       <div className="heading flex flex-col justify-center items-center">
-        <h1 className="text-2xl sm:text-4xl font-bold text-white">
+        <h1 className="text-3xl sm:text-4xl font-bold text-white">
           Experience the Best of{" "}
         </h1>
         <h1 className="text-2xl sm:text-4xl font-bold text-white">College fest! </h1>
-        <p className="pt-5 text-sm text-center font-semibold text-slate-300 ">
+        <p className="pt-5 text-lg text-center font-semibold text-slate-300 ">
           Explore various events, workshops, competitions and much more.
         </p>
       </div>
