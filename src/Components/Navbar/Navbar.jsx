@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className="logo h-[40px] w-[160px] sm:h-[50px] sm:w-[260px] rounded-full bg-gray-600 flex justify-center items-center hover:cursor-pointer">
         <Link to='/' className="w-full h-full">
         <div
-          style={{ backgroundImage: `url(./Slider/Photo7.JPG)` }}
+          style={{ backgroundImage: `url(./image-slider/Photo7.webp)` }}
           className="header flex justify-center items-center bg-cover w-full h-full bg-center rounded-full opacity-80"
         >
           <h1 className="text-xl font-bold sm:text-3xl text-white">Akanksha</h1>

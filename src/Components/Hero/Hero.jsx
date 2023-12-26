@@ -1,8 +1,11 @@
 import React from "react";
 
 const Hero = () => { 
+ 
   return (
     <div style={{ backgroundImage: `url(./Demo-pics/cultural.webp)` }} className="flex justify-center items-center bg-no-repeat bg-cover bg-center  h-screen w-full ">
+      
+      
       {/* left-contents */}
       <div className="left w-full mx-auto flex justify-center items-center ">
         <div className=" flex flex-col items-center justify-center ">

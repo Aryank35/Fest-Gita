@@ -61,7 +61,7 @@ const ImageSlider = ({ images }) => {
       >
         <FontAwesomeIcon icon={faChevronRight} className="text-white text-4xl md:font-bold font-semibold"/>
         
-      </button>
+      </button>  
     </div>
   );
 };

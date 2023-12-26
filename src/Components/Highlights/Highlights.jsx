@@ -4,49 +4,49 @@ import ImageSlider from "../Hero/ImageSlider";
 const Highlights = () => {
   const images = [
     {
-      url:'./Demo-pics/College-fest.jpeg'
+      url:'./Demo-pics/college-fest.webp'
     },
     {
-      url:'./Demo-pics/College-logo.jpg'
+      url:'./Demo-pics/college-logo.webp'
     },
     {
-      url:'./Slider/Photo1.JPG'
+      url:'./image-slider/Photo1.webp'
     },
     {
-      url:'./Slider/Photo2.JPG'
+      url:'./image-slider/Photo2.webp'
     },
     {
-      url:'./Slider/Photo3.JPG'
+      url:'./image-slider/Photo3.webp'
     },
     {
-      url:'./Slider/Photo4.JPG'
+      url:'./image-slider/Photo4.webp'
     },
     {
-      url:'./Slider/Photo5.JPG'
+      url:'./image-slider/Photo5.webp'
     },
     {
-      url:'./Slider/Photo6.JPG'
+      url:'./image-slider/Photo6.webp'
     },
     {
-      url:'./Slider/Photo7.JPG'
+      url:'./image-slider/Photo7.webp'
     },
     {
-      url:'./Slider/Photo8.JPG'
+      url:'./image-slider/Photo8.webp'
     },
     {
-      url:'./Slider/Photo9.JPG'
+      url:'./image-slider/Photo9.webp'
     },
     {
-      url:'./Slider/Photo10.JPG'
+      url:'./image-slider/Photo10.webp'
     }, 
     {
-      url:'./Slider/Photo11.JPG'
+      url:'./image-slider/Photo11.webp'
     }, 
     {
-      url:'./Slider/Photo12.JPG'
+      url:'./image-slider/Photo12.webp'
     }]
   return (
-    <div className="">
+    <div className=" w-full">
       <div className=" flex flex-col justify-center items-center md:flex-row w-full h-fit mx-auto ">
 
         {/* left content  */}
@@ -60,7 +60,22 @@ const Highlights = () => {
           <ImageSlider images={images}/>
         </div>
       </div>
+      
       </div>
+      <div className="videos flex items-center justify-center flex-col sm:flex-row flex-wrap sm:space-x-5 mx-auto space-y-5 sm:space-y-0 py-6">
+      {[1, 2, 3, 4, 5].map((index) => (
+        <div key={index} className="sm:w-[30%] md:h-[300px] sm:h-[200px] 2xl:h-[400px] 2xl:w-[45%] h-[200px] w-full max-w-screen my-5">
+          <iframe
+            className="w-full h-full"
+            src="https://www.youtube.com/embed/dyTGbrzueMI"
+            title={`Dance Performance ${index}`}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+        </div>
+      ))}
+    </div>
     </div>
   );
 };
