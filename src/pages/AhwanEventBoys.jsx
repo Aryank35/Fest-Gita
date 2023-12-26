@@ -36,7 +36,7 @@ const AhwanEventBoys = () => {
       <Navbar />
       <div className="py-[60px]">
         <h1 className="text-white text-center font-bold md:text-5xl text-2xl my-5">
-          Ahwan (Boys) Events
+          Ahwan Boys Events
         </h1>
         <div className="box-container flex flex-wrap justify-around">
           <EventBox url={AhwanElements[0].url} />

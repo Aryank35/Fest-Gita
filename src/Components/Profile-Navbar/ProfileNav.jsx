@@ -47,7 +47,7 @@ const ProfileNav = () => {
       <div className="logo h-[40px] w-[160px] sm:h-[65px] sm:w-[260px] rounded-full bg-gray-600 flex justify-center items-center hover:cursor-pointer">
         <Link to="/" className="h-full w-full">
         <div
-          style={{ backgroundImage: `url(./Demo-pics/cultural.webp)` }}
+          style={{ backgroundImage: `url(./image-slider/Photo7.webp)` }}
           className="header flex justify-center items-center bg-cover w-full h-full bg-center rounded-full opacity-80"
         >
           <h1 className="text-xl font-bold sm:text-3xl text-white">Akanksha</h1>
