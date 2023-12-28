@@ -14,7 +14,7 @@ const AnweshWinnerPage = () => {
           <div className="nav  hidden md:flex md:w-[20%]">
             <Sidebar />
           </div>
-          <div className="profile md:w-[80%] flex flex-col py-[60px] md:py-5">
+          <div className="profile w-screen flex flex-col py-[60px] md:py-5">
             <div>
               <h1 className="text-white font-bold text-3xl mt-8 text-center">
                 Anwesh Winners

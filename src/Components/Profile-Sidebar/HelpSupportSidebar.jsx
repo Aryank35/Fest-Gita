@@ -14,7 +14,7 @@ const HelpSupportSidebar = () => {
           <SideNavElements title="Home" icon={<FaHome />} link="/" />
           
           <SideNavElements
-            title="OrgDashboard"
+            title="SupportDashboard"
             icon={<RxDashboard />}
             link="/helpSupportProfile"
           />
