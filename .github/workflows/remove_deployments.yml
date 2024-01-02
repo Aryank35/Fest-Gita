@@ -1,0 +1,28 @@
+name: Delete Vercel Previews
+
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  delete-vercel-previews:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Delete Vercel Preview
+        run: |
+          PR_BODY=$(curl -sH "Authorization: token $GITHUB_TOKEN" ${{ github.api_url }}/repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }} | jq -r '.body')
+          DEPLOYMENT_URL=$(echo $PR_BODY | grep -oP 'https://.*?\.vercel\.app')
+
+          if [ -n "$DEPLOYMENT_URL" ]; then
+            curl -X DELETE -H "Authorization: Bearer $VERCEL_TOKEN" $DEPLOYMENT_URL
+          fi
+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+

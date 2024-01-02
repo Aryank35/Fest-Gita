@@ -4,6 +4,7 @@ import Sidebar from "../Components/Profile-Sidebar/Sidebar";
 import ProfileNav from "../Components/Profile-Navbar/ProfileNav";
 
 import EventResisteredBox from "../Components/Events-updates/EventResisteredBox";
+import Achievement from "../Components/Events-updates/Event-box/Achievement";
 
 function Profile() {
   return (
@@ -49,6 +50,7 @@ function Profile() {
                   />
                 </div>
               </div>
+              <Achievement/>
             </div>
           </div>
         </div>
