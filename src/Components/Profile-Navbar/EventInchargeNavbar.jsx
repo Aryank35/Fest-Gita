@@ -30,7 +30,7 @@ const EventInchargeNavbar = () => {
           {
             title: "Update Event-Details",
       
-            link: "/inputEventDetails",
+            link: "/support/inputEventDetailsForm",
           },
           {
             title: "Notification Center",

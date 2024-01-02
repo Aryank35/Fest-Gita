@@ -14,15 +14,15 @@ const HelpSupportSidebar = () => {
           <SideNavElements title="Home" icon={<FaHome />} link="/" />
           
           <SideNavElements
-            title="OrgDashboard"
+            title="SupportDashboard"
             icon={<RxDashboard />}
-            link="/helpSupportProfile"
+            link="/support/profile"
           />
           
           <SideNavElements
             title="Notification Center"
             icon={<IoMdNotifications />}
-            link="/helpSupportNotifications"
+            link="/support/notifications"
           />
           
         </div>

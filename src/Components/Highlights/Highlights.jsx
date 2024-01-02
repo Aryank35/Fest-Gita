@@ -4,7 +4,7 @@ import ImageSlider from "../Hero/ImageSlider";
 const Highlights = () => {
   const images = [
     {
-      url:'./Demo-pics/college-fest.webp'
+      url:'./image-slider/glimpse.webp'
     },
     {
       url:'./Demo-pics/college-logo.webp'

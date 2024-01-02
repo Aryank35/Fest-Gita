@@ -47,7 +47,7 @@ const EventParticipants = () => {
           </h1>
 
           <div className="Participants-details overflow-x-auto">
-            <table className="border-collapse border-[1px] text-white w-full">
+            <table className="border-collapse border-[1px] border-black text-white w-full">
               <thead>
                 <tr className="bg-purple-800">
                   <th className="py-2 px-4">SlNo</th>

@@ -9,15 +9,15 @@ import Navbar from "../Components/Navbar/Navbar";
 export default function Landing() {
   
   return (
-    
-    <div className="bg-gradient-to-b from-black via-purple-900 to-black h-full">
-      
-      <Navbar />
-      <Hero />
-      <Events />
-      <EventUpdates />
-      <Highlights />
-      <Footer />
-    </div>
+
+      <div className="bg-gradient-to-b from-black via-purple-900 to-black h-full">
+        <Navbar />
+        <Hero />
+        <Events />
+        <EventUpdates />
+        <Highlights />
+        <Footer />
+      </div>
+
   );
 }

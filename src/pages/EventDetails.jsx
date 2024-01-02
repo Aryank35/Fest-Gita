@@ -85,7 +85,7 @@ const EventDetails = () => {
               </div>
               <Link
             to='/register'
-            class="flex items-center w-[200px] justify-center py-3 my-2 md:my-5 text-lg font-medium text-center text-white hover:scale-90 bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className="flex items-center w-[200px] justify-center py-3 my-2 md:my-5 text-lg font-medium text-center text-white hover:scale-90 bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
            Register
             

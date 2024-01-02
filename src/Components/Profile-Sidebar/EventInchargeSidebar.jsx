@@ -27,7 +27,7 @@ const EventInchargeSidebar = () => {
       <SideNavElements
         title="Update Event-Details"
         icon={<FontAwesomeIcon icon={faGear} />}
-        link="/inputEventDetails"
+        link="/support/inputEventDetailsForm"
       />
       <SideNavElements
         title="Notification Center"
