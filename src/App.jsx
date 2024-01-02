@@ -145,10 +145,7 @@ export default function App() {
                     path="/eventCoordinatorHelp"
                     element={<EventCoordinatorsHelp />}
                 />
-                {/* <Route
-                    path="/helpSupportNotifications"
-                    element={<HelpSupportNotification />}
-                /> */}
+                
                 <Route path="/eventParticipants" element={<EventParticipants />} />
                 <Route path="/navToPages" element={<NavToPages />} />
                 <Route path="/techFestEvents" element={<TechFestEvents />} />
