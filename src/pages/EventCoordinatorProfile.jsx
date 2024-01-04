@@ -24,13 +24,16 @@ const EventCoordinatorProfile = () => {
             </Link>
           </div>
           <div className="Participants w-full my-4">
-              <Link to="/eventParticipants" className="w-full flex justify-center">
+            <Link
+              to="/eventParticipants"
+              className="w-full flex justify-center"
+            >
               <div className="events w-full h-[80px] md:w-[50%] sm:h-[100px] bg-slate-700 px-3 rounded-xl opacity-80 hover:scale-90 hover:opacity-30  font-bold text-4xl  hover:text-6xl  flex justify-center items-center shadow-lg shadow-blue-400 ">
                 <p className="text-center opacity-100 text-white ">
                   Participants
                 </p>
               </div>
-              </Link>
+            </Link>
           </div>
         </div>
       </div>

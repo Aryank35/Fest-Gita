@@ -33,7 +33,7 @@ const CreditsBox = (props) => {
         <div className="photo w-[80px] rounded-full">
           <img
             src={props.photo}
-            alt="Aryan image"
+            alt="profile image"
             className="w-[full] h-[full] rounded-full"
           />
         </div>

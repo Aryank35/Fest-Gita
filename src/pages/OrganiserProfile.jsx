@@ -6,7 +6,7 @@ import OrganiserProfileNavbar from "../Components/Profile-Navbar/OrganiserProfil
 
 const OrganiserProfile = () => {
   return (
-    <div className="bg-gradient-to-b from-black via-purple-900 to-black h-full">
+    <div className="bg-gradient-to-b from-black via-purple-900 to-black min-h-screen h-full">
       <div className="phone-nav md:hidden">
         <OrganiserProfileNavbar/>
       </div>

@@ -1,5 +1,7 @@
 import React from "react";
 import ImageSlider from "../Hero/ImageSlider";
+import { Link } from "react-router-dom";
+import EventCard from "../Events/EventCard";
 
 const Highlights = () => {
   const images = [
@@ -62,20 +64,13 @@ const Highlights = () => {
       </div>
       
       </div>
-      <div className="videos flex items-center justify-center flex-col sm:flex-row flex-wrap sm:space-x-5 mx-auto space-y-5 sm:space-y-0 py-6">
-      {[1, 2, 3, 4, 5].map((index) => (
-        <div key={index} className="sm:w-[30%] md:h-[300px] sm:h-[200px] 2xl:h-[400px] 2xl:w-[45%] h-[200px] w-full max-w-screen my-5">
-          <iframe
-            className="w-full h-full"
-            src="https://www.youtube.com/embed/dyTGbrzueMI"
-            title={`Dance Performance ${index}`}
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
-        </div>
-      ))}
-    </div>
+
+      <div className="last-year-gallery flex justify-center items-center my-10">
+      <Link to="/gallery" className=" w-[90%] sm:w-[70%] ">
+          <EventCard name="2023 Fest Gallery" url={"./Gallery/gallery.webp"} />
+        </Link> 
+      </div>
+      
     </div>
   );
 };
