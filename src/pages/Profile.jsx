@@ -1,25 +1,19 @@
 import React from "react";
-import Sidebar from "../Components/Profile-Sidebar/Sidebar";
-
 import ProfileNav from "../Components/Profile-Navbar/ProfileNav";
-
 import EventResisteredBox from "../Components/Events-updates/EventResisteredBox";
 import Achievement from "../Components/Events-updates/Event-box/Achievement";
 
 function Profile() {
   return (
-    <div className="w-full bg-gradient-to-b from-black via-purple-900 to-black h-full">
-      <div className="  flex mx-auto flex-col md:flex-row w-full  h-full ">
-        <div className="navbar w-full md:hidden">
+    <div className="w-full bg-gradient-to-b from-black via-purple-900 to-black h-full min-h-screen">
+      
+        <div className="navbar w-full fixed top-0 backdrop-blur-lg">
           <ProfileNav />
         </div>
-        <div className=" flex mx-auto w-full h-full">
-          <div className="sidebar hidden min-h-screen md:flex md:w-[20%] ">
-            <Sidebar />
-          </div>
-
+        <div className=" flex py-[60px] mx-auto w-full h-full">
+         
           {/* hero section  */}
-          <div className="hero w-full md:w-[80%] h-full py-5 flex justify-center item-center ">
+          <div className="hero w-full h-full py-5 flex justify-center item-center ">
             <div className=" w-full flex flex-col justify-center text-center item-center mx-auto">
               <h3 className="md:text-5xl text-3xl font-bold text-white">
                 Welcome to your Dashboard!
@@ -55,7 +49,7 @@ function Profile() {
           </div>
         </div>
       </div>
-    </div>
+    
   );
 }
 

@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import Navbar from "../Components/Navbar/Navbar";
 import React from "react";
 
-const EventDetails = () => {
+const EventDetails = (props) => {
   return (
     <div className="bg-gradient-to-b from-black via-purple-900 to-black h-full min-h-screen">
-      <Navbar />
+      <Navbar/>
       <div className=" pt-[60px] h-full">
         <div className=" flex flex-col md:flex-row">
           <div className="left md:w-[50%] md:p-6 p-2">

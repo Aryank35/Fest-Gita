@@ -1,5 +1,6 @@
 import React from "react";
 import CreditsBox from "../Components/Credits/CreditsBox";
+import { Navbar } from "flowbite-react";
 
 const CreditsPage = () => {
   const creditDetails = [
@@ -46,6 +47,7 @@ const CreditsPage = () => {
   ];
   return (
     <div className="w-full bg-gradient-to-b from-black via-purple-900 to-black min-h-screen h-full py-12">
+      <Navbar/>
       <h1 className="text-white text-4xl font-bold text-center pt-[25px]">
         Credits
       </h1>

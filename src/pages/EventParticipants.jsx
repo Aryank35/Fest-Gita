@@ -1,6 +1,6 @@
 import React from "react";
-import EventCoordinatorNavbar from "../Components/Profile-Navbar/EventCoordinatorNavbar";
-import EventCoordinatorSidebar from "../Components/Profile-Sidebar/EventCoordinatorSidebar";
+
+import { Link } from "react-router-dom";
 
 const EventParticipants = () => {
   // Example participant data array
@@ -33,15 +33,15 @@ const EventParticipants = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-black via-purple-900 to-black min-h-screen">
-      <div className="phone-nav md:hidden">
-        <EventCoordinatorNavbar />
-      </div>
+    <div className="bg-gradient-to-b py-10 from-black via-purple-900 to-black min-h-screen">
+       <div className="absolute top-4 left-4">
+                <Link to="/" className="w-fit">
+                    <button className="bg-slate-600 px-5 py-2 text-lg font-semibold rounded-md hover:scale-90 hover:text-red-600 text-white">Back</button>
+                </Link>
+            </div>
       <div className="Organiser-Profile-page w-full h-full flex flex-col md:flex-row justify-center">
-        <div className="nav hidden md:flex md:w-[20%]">
-          <EventCoordinatorSidebar />
-        </div>
-        <div className="profile md:w-[80%] flex flex-col py-5 md:py-0">
+        
+        <div className="profile md:w-full flex flex-col py-5 md:py-0">
           <h1 className="font-bold text-white text-4xl text-center mb-5">
             Event Participants
           </h1>
