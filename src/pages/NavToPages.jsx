@@ -6,10 +6,18 @@ const NavToPages = () => {
     <div className="bg-gradient-to-b from-black via-purple-900 to-black min-h-screen">
       <div className="eventIncharge">
         <ul className="flex flex-col w-full justify-center items-center text-white font-bold text-2xl h-screen space-y-11 ">
+        <li>
+            <Link
+              className="hover:text-gray-400 active:underline py-1"
+              to="/profile"
+            >
+              Student Profile
+            </Link>
+          </li>
           <li>
             <Link
               className="hover:text-gray-400 active:underline py-1"
-              to="/eventInchargeProfile"
+              to="/eventIncharge/Profile"
             >
               Event Incharge Profile
             </Link>
@@ -17,7 +25,7 @@ const NavToPages = () => {
           <li>
             <Link
               className="hover:text-gray-400 active:underline py-1"
-              to="/eventCoordinatorProfile"
+              to="/eventCoordinator/Profile"
             >
               Event Coordinator Profile
             </Link>
@@ -25,7 +33,7 @@ const NavToPages = () => {
           <li>
             <Link
               className="hover:text-gray-400 active:underline py-1"
-              to="/organiserProfile"
+              to="/organiser/Profile"
             >
               Organiser Profile
             </Link>
@@ -38,14 +46,7 @@ const NavToPages = () => {
               Help & Support Team Profile
             </Link>
           </li>
-          <li>
-            <Link
-              className="hover:text-gray-400 active:underline py-1"
-              to="/fest/CreditsPage"
-            >
-              Credits page
-            </Link>
-          </li>
+          
         </ul>
       </div>
     </div>

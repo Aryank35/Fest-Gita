@@ -10,7 +10,7 @@ export default function Landing() {
   
   return (
 
-      <div className="bg-gradient-to-b from-black via-purple-900 to-black h-full">
+      <div className="bg-gradient-to-b from-black via-purple-900 to-black min-h-screen h-full">
         <Navbar />
         <Hero />
         <Events />

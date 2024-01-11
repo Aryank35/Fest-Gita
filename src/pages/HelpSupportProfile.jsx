@@ -1,20 +1,17 @@
 import React from 'react'
-import HelpSupportNavbar from '../Components/Profile-Navbar/HelpSupportNavbar';
-import HelpSupportSidebar from '../Components/Profile-Sidebar/HelpSupportSidebar';
 import { Link } from 'react-router-dom';
 import EventCard from '../Components/Events/EventCard';
+import HelpSupportNavbar from '../Components/Profile-Navbar/HelpSupportNavbar';
 
 const HelpSupportProfile = () => {
     return (
-        <div className="bg-gradient-to-b from-black via-purple-900 to-black h-full">
-            <div className="phone-nav md:hidden">
-                <HelpSupportNavbar />
+        <div className="bg-gradient-to-b from-black via-purple-900 to-black min-h-screen h-full">
+            <div className="phone-nav w-full fixed top-0 backdrop-blur-lg">
+                <HelpSupportNavbar/>
             </div>
-            <div className="Organiser-Profile-page w-full h-full flex justify-center">
-                <div className="nav  hidden md:flex min-h-screen md:w-[20%]">
-                    <HelpSupportSidebar />
-                </div>
-                <div className="profile md:w-[80%] flex flex-col py-[60px]">
+            <div className="Organiser-Profile-page py-[60px] w-full h-full flex justify-center">
+                
+                <div className="profile w-full flex flex-col py-[60px]">
                     <h1 className="text-white font-bold text-center md:text-5xl text-3xl underline underline-offset-8">
                         Welcome to your Dashboard!
                     </h1>
