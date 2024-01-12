@@ -4,7 +4,7 @@ import Navbar from "../Components/Navbar/Navbar";
 const TechFestEvents = () => {
     const AnweshElements = [
         {
-          url: "./Demo-pics/tech.jpg",
+          url: "https://i.postimg.cc/1Xy5R4wq/techfest.jpg",
           EventName: "Codathon",
           desc: "Show your Codding skills",
           details: [
@@ -17,7 +17,7 @@ const TechFestEvents = () => {
           ],
         },
         {
-          url: "./Demo-pics/tech.jpg",
+          url: "https://i.postimg.cc/1Xy5R4wq/techfest.jpg",
           EventName: "Rangoli",
           desc: "Creativity with Colours",
           details: [
@@ -31,7 +31,7 @@ const TechFestEvents = () => {
         },
       ];
   return (
-    <div className=" min-h-screen w-screen bg-gradient-to-b from-black via-purple-900 to-black">
+    <div className=" min-h-screen w-full bg-gradient-to-b from-black via-purple-900 to-black">
       <Navbar />
       {/* Tech Fest */}
       <div className=" pt-[60px] flex flex-col justify-center items-center w-full">

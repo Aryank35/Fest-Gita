@@ -13,11 +13,11 @@ const Gallery = () => {
         </Link>
       </div>
       <Link to="/gallery/Photoes" className=" w-[90%] sm:w-[40%] ">
-        <EventCard name="Photos" url={"./Gallery/gallery2.webp"} />
+        <EventCard name="Photos" url={"../Gallery/gallery2.webp"} />
       </Link>
 
       <Link to="/gallery/Videos" className=" w-[90%] sm:w-[40%] ">
-        <EventCard name="Videos" url={"./Gallery/gallery2.webp"} />
+        <EventCard name="Videos" url={"../Gallery/gallery2.webp"} />
       </Link>
     </div>
   );

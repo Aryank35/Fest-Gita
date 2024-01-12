@@ -3,6 +3,8 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { Spinner } from "flowbite-react";
 import { Link } from "react-router-dom";
+import { useRecoilState } from "recoil";
+import { userState } from "../store/atoms/user";
 
 const SignUp = () => {
     const [email, setEmail] = useState("");
@@ -10,21 +12,27 @@ const SignUp = () => {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState("");
     const navigate = useNavigate();
+    const setUser = useRecoilState(userState);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
         try {
             setLoading(true);
-            const response = await axios.post("http://localhost:3000/user/signup", {
+            await axios.post("http://localhost:3000/user/signup", {
                 email: email,
                 password: password,
-            });
-            console.log(response.data.message);
-            localStorage.setItem("token", response.data.token);
-            if(!response){
+            }).then(res => {
+                const { token } = res.data;
+                localStorage.setItem("token", token);
+                setUser({
+                    userID: email
+                })
+                navigate('/');
+                // put up notification here "signup succesfull or welcome"
+            }).catch((e) => {
                 setError(response.data.message);
-            }
+            })
         } catch (error) {
             console.log("something broke", error);
         } finally {

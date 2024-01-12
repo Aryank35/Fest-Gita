@@ -19,10 +19,10 @@ const Ahwan = () => {
         </p>
         <div className="Event-Container w-full flex justify-around flex-wrap">
         <Link to="/ahwanBoys" className=" w-[95%] sm:w-[30%]">
-          <EventCard name="Boys" url={"./Demo-pics/sports.jpg"} />
+          <EventCard name="Boys" url={"https://i.postimg.cc/N04y7f5x/men.webp"} />
         </Link>
         <Link to="/ahwanGirls" className=" w-[95%] sm:w-[30%]">
-          <EventCard name="Girls" url={"./Demo-pics/sports.jpg"} />
+          <EventCard name="Girls" url={"https://i.postimg.cc/cHLvDy3G/women.jpg"} />
         </Link>
          
           {/*  */}

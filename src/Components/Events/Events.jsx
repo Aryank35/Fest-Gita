@@ -16,15 +16,15 @@ const Events = () => {
       </div>
       <div className=" flex flex-col sm:flex-row justify-around items-center w-full py-[50px]">
         <Link to="/ahwan" className=" w-[95%] sm:w-[30%]">
-          <EventCard name="Ahwan" url={"./Demo-pics/sports.jpg"} />
+          <EventCard name="Ahwan" url={"https://i.postimg.cc/VNyszV4H/sports.webp"} />
         </Link>
 
         <Link to="/anwesh" className=" w-[95%] sm:w-[30%]">
-          <EventCard name="Anwesh" url={"./Demo-pics/tech.jpg"} />
+          <EventCard name="Anwesh" url={"https://i.postimg.cc/yYd8j9kn/tech.webp"} />
         </Link>
 
         <Link to="/akanksha" className=" w-[95%] sm:w-[30%]">
-          <EventCard name="Akanksha" url={"./Demo-pics/cultural.webp"} />
+          <EventCard name="Akanksha" url={"https://i.postimg.cc/QMp8CJyN/logo.webp"} />
         </Link>
       </div>
     </div>

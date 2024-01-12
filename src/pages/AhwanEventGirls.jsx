@@ -5,7 +5,7 @@ import EventBox from "../Components/Events-updates/EventBox";
 const AhwanEventGirls = () => {
   const AhwanElements = [
     {
-      url: "./Demo-pics/sports.jpg",
+      url: "https://i.postimg.cc/cHLvDy3G/women.jpg",
       EventName: "100 M Boys",
       desc: "show your Sports skills...",
       details: [
@@ -32,7 +32,7 @@ const AhwanEventGirls = () => {
     },
   ];
   return (
-    <div className="h-full  w-screen bg-gradient-to-b from-black via-purple-900 to-black">
+    <div className="h-full  w-full bg-gradient-to-b from-black via-purple-900 to-black">
       <Navbar />
       <div className="py-[60px]">
         <h1 className="text-white text-center font-bold md:text-5xl text-2xl my-5">

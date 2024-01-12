@@ -11,7 +11,7 @@ const Robotics = () => {
         <div className=" flex flex-col md:flex-row">
           <div className="left md:w-[50%] md:p-6 p-2">
             <img
-              src="./Demo-pics/Robo-wars.webp"
+              src="https://i.postimg.cc/y6rQB070/robotics.jpg"
               alt="event-image"
               className=" rounded-xl shadow-md shadow-blue-700"
             />

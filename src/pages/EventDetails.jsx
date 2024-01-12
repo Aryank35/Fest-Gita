@@ -10,7 +10,7 @@ const EventDetails = (props) => {
         <div className=" flex flex-col md:flex-row">
           <div className="left md:w-[50%] md:p-6 p-2">
             <img
-              src="./Demo-pics/Robo-wars.webp"
+              src="https://i.postimg.cc/1Xy5R4wq/techfest.jpg"
               alt="event-image"
               className=" rounded-xl shadow-md shadow-blue-700"
             />

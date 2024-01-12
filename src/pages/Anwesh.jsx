@@ -17,10 +17,10 @@ const Anwesh = () => {
         </p>
         <div className="Event-Container w-full flex justify-around flex-wrap">
         <Link to="/techFestEvents" className=" w-[95%] sm:w-[30%]">
-          <EventCard name="Tech Fest" url={"./Demo-pics/tech.jpg"} />
+          <EventCard name="Tech Fest" url={"https://i.postimg.cc/1Xy5R4wq/techfest.jpg"} />
         </Link>
         <Link to="/robotics" className=" w-[95%] sm:w-[30%]">
-          <EventCard name="Robotics" url={"./Demo-pics/tech.jpg"} />
+          <EventCard name="Robotics" url={"https://i.postimg.cc/y6rQB070/robotics.jpg"} />
         </Link>
           
         </div>

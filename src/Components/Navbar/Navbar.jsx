@@ -11,13 +11,15 @@ const Navbar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+
+
   return (
     <nav className="h-[50px] absolute sm:fixed backdrop-blur-xl sm:h-[60px] w-full  flex justify-between items-center px-1 py-3 sm:px-5 ">
       {/* Logo */}
       <div className="logo h-[40px] w-[160px] sm:h-[50px] sm:w-[260px] rounded-full bg-gray-600 flex justify-center items-center hover:cursor-pointer">
         <Link to='/' className="w-full h-full">
         <div
-          style={{ backgroundImage: `url(./image-slider/Photo7.webp)` }}
+          style={{ backgroundImage: `url(https://i.postimg.cc/QMp8CJyN/logo.webp)` }}
           className="header flex justify-center items-center bg-cover w-full h-full bg-center rounded-full opacity-80"
         >
           <h1 className="text-xl font-bold sm:text-3xl text-white">Akanksha</h1>
@@ -27,14 +29,7 @@ const Navbar = () => {
       {/* navigations */}
       <div className="nav-contents hidden md:flex items-center">
         <ul className="flex items-center justify-center sm:space-x-4 xl:space-x-6 text-xl font-bold">
-          
-          <li className="hover:underline text-white  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
-          <Link
-          to="/about">
-           About
-           </Link>
-          </li>
-          
+                    
           <li className="hover:underline text-white  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
           <Link
           to="/coordinators">
@@ -42,6 +37,13 @@ const Navbar = () => {
             </Link>
           </li>
           
+          <li className="hover:underline text-white  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
+          <Link
+          to="/gallery">
+            Gallery
+            </Link>
+          </li>
+
           <li className="hover:underline text-white  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
           <Link
           to="/navToPages">
@@ -87,15 +89,7 @@ const Navbar = () => {
           <img src="./cross.png" alt="cross-icon" className="h-[30px]" />
         </div>
         <ul className="nav-menu flex flex-col items-center space-y-3 font-semibold ">
-          <li>
-          <Link
-              to="/profile"
-              onClick={toggleMobileMenu}
-              className="flex justify-start items-center px-2"
-            >
-              <span className="sm:hidden">profile</span>
-            </Link>
-          </li>
+          
           <li>
             <Link
               className="hover:text-gray-400 active:underline py-1"
@@ -106,15 +100,7 @@ const Navbar = () => {
             </Link>
           </li>
           
-          <li>
-            <Link
-              className="hover:text-gray-400 active:underline py-1"
-              to="/about"
-              onClick={toggleMobileMenu}
-            >
-              About
-            </Link>
-          </li>
+          
           <li>
             <Link
               className="hover:text-gray-400 active:underline py-1"
@@ -122,6 +108,33 @@ const Navbar = () => {
               onClick={toggleMobileMenu}
             >
               Coordinators
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="hover:text-gray-400 active:underline py-1"
+              to="/gallery"
+              onClick={toggleMobileMenu}
+            >
+              Gallery
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="hover:text-gray-400 active:underline py-1"
+              to="/fest/CreditsPage"
+              onClick={toggleMobileMenu}
+            >
+              Credits
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="hover:text-gray-400 active:underline py-1"
+              to="/navToPages"
+              onClick={toggleMobileMenu}
+            >
+              Others
             </Link>
           </li>
           <li>
@@ -135,15 +148,7 @@ const Navbar = () => {
               </button>
             </Link>
           </li>
-          <li>
-            <Link
-              className="hover:text-gray-400 active:underline py-1"
-              to="/navToPages"
-              onClick={toggleMobileMenu}
-            >
-              Others
-            </Link>
-          </li>
+          
         </ul>
       </div>
     </nav>

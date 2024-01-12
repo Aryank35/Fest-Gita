@@ -3,17 +3,17 @@ import React from "react";
 const EventList = () => {
   return (
     <div>
-      <div className="events flex justify-around items-center border-2 my-3 rounded-xl py-2 hover:cursor-pointer mx-auto">
-        <div className="event-Info sm:mx-10  flex flex-col justify-center">
-          <p className="font-semibold sm:text-lg text-white">Face Painting</p>
-          <p className="text-xs font-light text-slate-200">Gita Garden-2</p>
+      <div className="events flex w-full flex-col bg-white text-black justify-center items-center border-2 my-3 rounded-xl md:p-6 p-3 hover:cursor-pointer mx-auto">
+        <div className="event-Info  flex flex-col justify-center items-center">
+          <p className="font-bold text-2xl ">Face Painting</p>
+          <p className=" font-semibold text-md ">Gita Garden-2</p>
         </div>
 
-        <div className="event-timming sm:mx-10 sm:flex flex-col justify-center ">
-          <p className="text-slate-200 font-semibold text-sm">
-            Fri,28 Jan 2023
+        <div className="event-timming mt-4 flex justify-between items-center ">
+          <p className=" font-semibold w-[50%] text-md text-start">
+            Fri, 4 Feb 2024
           </p>
-          <p className="text-slate-200 text-xs">14:25 - 15:35</p>
+          <p className=" text-md w-[50%] text-end font-semibold">11 : 15 AM</p>
         </div>
       </div>
     </div>
